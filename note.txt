@@ -1,0 +1,23 @@
+1.access the webcam
+2. change webcam to hsv color 
+3.create a mask using inrange()  (detect white as object)
+4.draw boundy box using pillow library
+
+
+
+doubt
+
+1.why it is better to use hsv?
+
+HSV separates color from lighting, which makes color detection more stable and accurate than RGB/BGR.
+
+when we use RGB
+
+Red object in sunlight → (0,0,255)
+Same red object in shadow → (20,20,180)
+
+So a simple threshold fails ❌
+
+2.what the pillow library does in this?
+
+Pillow is used mainly for clean visualization and annotation, not for detection itself.
